@@ -1,0 +1,53 @@
+<ul>
+  <li class="mdl-mini-footer--social-btn"><a target="_blank"
+    href="https://twitter.com/ZGZGGALA" class="social-btn social-btn__twitter"
+    role="button" title="Twitter"></a></li>
+  <li class="mdl-mini-footer--social-btn"><a target="_blank"
+    href="https://www.facebook.com/zgzg.gala.1"
+    class="social-btn social-btn__facebook" role="button" title="Facebook"></a></li>
+  <li class="mdl-mini-footer--social-btn"><a target="_blank"
+    href="https://plus.google.com/u/0/102605990473729572396"
+    class="social-btn social-btn__gplus" role="button" title="Google+"></a></li>
+  <li class="mdl-mini-footer--social-btn"><a target="_blank"
+    href="https://plus.google.com/u/0/102605990473729572396"
+    class="social-btn social-btn__weibo" role="button" title="Weibo"> </a></li>
+</ul>
+<div class="legal-disclaimer">
+  <a href="legal.html">Copyright © <span id="copyright-year">2017</span><span class="separator">|</span>Legal Disclaimer</a>
+</div>
+<script>
+// Google Analytics
+$(function() {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-89539331-1', 'auto');
+  ga('send', 'pageview');
+});
+
+// Disable the mouse scroll on Google Map iframe
+$(function() {
+  $('.location').click(function() {
+    $(this).find('iframe').css("pointer-events", "auto");
+  });
+
+  $( ".location iframe" ).mouseleave(function() {
+    $(this).css("pointer-events", "none");
+  });
+});
+
+$(function() {
+  // Update the copyright year
+  $('#copyright-year').text(new Date().getFullYear());
+  // Loading the legal disclaimer
+  $('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', './static/magnific-popup.css') );
+  $.getScript("./static/jquery.magnific-popup.min.js", function() {
+    $('.legal-disclaimer a').magnificPopup({
+      type:  'ajax',
+      fixedContentPos: true,
+    });
+  });
+});
+</script>

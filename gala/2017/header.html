@@ -1,0 +1,36 @@
+<div class="mdl-layout__header-row">
+  <span class="docs-layout-title mdl-layout-title"><a href="javascript:;">载歌在谷 2017年湾区春节晚会<br>ZaiGeZaiGu Chinese New Year Gala
+  </a></span>
+</div>
+<div class="docs-navigation__container">
+  <nav class="docs-navigation mdl-navigation">
+    <a href="./index.html" class="mdl-navigation__link about">关于晚会/About</a> <a
+      href="./sponsor.html" class="mdl-navigation__link sponsor">赞助商/Sponsership</a>
+    <a href="./past-event.html" class="mdl-navigation__link">往届回顾/Previous Events</a>
+    <a href="./faq.html" class="mdl-navigation__link">注意事项/Logistics & FAQ</a>
+    <div class="spacer"></div>
+    <a href="./contact.html"
+      class="mdl-navigation__link mdl-navigation__link--icon github"><i
+      class="material-icons">email</i><span>联系我们/CONTACT</span></a>
+  </nav>
+</div>
+<i class="material-icons scrollindicator scrollindicator--right">&#xE315;</i>
+<i class="material-icons scrollindicator scrollindicator--left">&#xE314;</i>
+<script type="text/javascript">
+! function() {
+    "use strict";
+    function e() {
+        c.classList.remove("disabled"), n.classList.remove("disabled"), l.scrollLeft <= 0 && c.classList.add("disabled"), l.scrollLeft + l.clientWidth + 5 >= l.scrollWidth && n.classList.add("disabled")
+    }
+    function t(e) {
+        l.scrollLeft += e
+    }
+    var n = document.querySelector(".scrollindicator.scrollindicator--right"),
+        c = document.querySelector(".scrollindicator.scrollindicator--left"),
+        l = document.querySelector(".docs-navigation"),
+        i = 40;
+    l.addEventListener("scroll", e), e(), n.addEventListener("click", t.bind(null, i)), n.addEventListener("tap", t.bind(null, i)), c.addEventListener("click", t.bind(null, -i)), c.addEventListener("tap", t.bind(null, -i))
+}()
+
+$("footer").load("footer.html");
+</script>
