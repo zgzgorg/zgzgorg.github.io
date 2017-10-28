@@ -54,6 +54,7 @@ section.header .title-image-placeholder {
 section.header .page-links-carousel {
   width: 100%;
   overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 section.header .page-links {
@@ -75,7 +76,6 @@ section.header a:visited {
 }
 
 section.header a:hover {
-  color: #333333;
   text-decoration: none;
 }
 
