@@ -1,0 +1,146 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosansscsliced.css);
+body {
+  font-family: 'Noto Sans SC Sliced', sans-serif;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.section-sub-title {
+  text-transform: uppercase;
+}
+
+.section-sub-title::after {
+  content: '';
+  display: block;
+  height: 1.5rem;
+  width: 10rem;
+  background: red;
+}
+
+section .image {
+  background-size: cover;
+}
+
+section .text {
+  padding: .5rem
+}
+
+section .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .text span {
+  display: block;
+  padding: .3em 1.5rem;
+}
+
+section .square-placeholder {
+  padding-top: 100%;
+}
+
+section.header {
+  background-color: #F7B73A;
+}
+
+section.header .title-image-placeholder {
+  padding-top: 40%;
+  min-height: 20rem;
+}
+
+section.header .page-links-carousel {
+  width: 100%;
+  overflow-x: scroll;
+}
+
+section.header .page-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-width: 70rem;
+}
+
+section.header a,
+section.header a:visited {
+  color: black;
+  padding: .5rem .2rem;
+  margin: 0 2rem;
+  text-transform: uppercase;
+  border-bottom-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: .2rem;
+}
+
+section.header a:hover {
+  color: #333333;
+  text-decoration: none;
+}
+
+section.footer .icon {
+  display: flex;
+  background-color: #29241D;
+  color: #FBC73D;
+  justify-content: center;
+  padding: 2rem;
+}
+
+section.footer .icon i {
+  margin: 0 .5rem;
+}
+
+section.footer .text {
+  background-color: #241F19;
+  color: #666666;
+  display: flex;
+  font-size: small;
+  justify-content: center;
+  padding: 1em;
+}
+
+section.footer .text span {
+  padding: 0 .5rem;
+}
+
+section.about {
+  background-color: #29241D;
+  color: white;
+  padding: 2rem;
+}
+
+section.about .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.about .text p {
+  max-width: 32rem;
+  text-align: center;
+}
+
+section.about .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section.about button {
+  background-color: #FBC73D;
+  border: 0;
+  border-radius: .2rem;
+  margin: 1rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  width: 12rem;
+}
+
+section.wechat img {
+  max-width: 320px;
+}
+
+section.wechat .image {
+  background-color: #FAC03B;
+}
