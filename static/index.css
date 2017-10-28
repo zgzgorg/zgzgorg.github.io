@@ -44,6 +44,7 @@ section .square-placeholder {
 
 section.header {
   background-color: #F7B73A;
+  overflow-x: hidden;
 }
 
 section.header .title-image-placeholder {
