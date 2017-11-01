@@ -19,7 +19,7 @@ body {
   text-transform: uppercase;
 }
 
-.section-sub-title:not(:first-child) {
+.section-sub-title:not(:first-of-type) {
   padding-top: 1.5rem;
 }
 
@@ -28,6 +28,7 @@ body {
   display: block;
   height: 12px;
   width: 90px;
+  margin-top: .5rem;
   background-image: url('./images/brush-stroke.png');
   background-repeat: no-repeat;
   background-position: center center;
@@ -49,14 +50,20 @@ section .text {
 }
 
 section .text div.text-content {
-  margin: 2rem;
+  margin: 5rem;
+}
+
+@media screen and (max-width: 500px) {
+  section .text div.text-content {
+    margin: 2rem;
+  }
 }
 
 section .text p.text-subtitle {
   font-weight: 700;
 }
 
-section .text p.text-subtitle:not(:first-child) {
+section .text p.text-subtitle:not(:first-of-type) {
   margin-top: 3rem;
 }
 
