@@ -7,24 +7,39 @@ body {
   padding: 0;
 }
 
+.img-bg {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
 .section-sub-title {
+  display: block;
+  padding: 1rem 0;
   text-transform: uppercase;
+}
+
+.section-sub-title:not(:first-child) {
+  padding-top: 1.5rem;
 }
 
 .section-sub-title::after {
   content: '';
   display: block;
-  height: 1.5rem;
-  width: 10rem;
-  background: red;
+  height: 12px;
+  width: 90px;
+  background-image: url('./images/brush-stroke.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
 }
 
 section .image {
   background-size: cover;
 }
 
-section .text {
-  padding: .5rem
+section .square-placeholder {
+  padding-top: 100%;
 }
 
 section .text {
@@ -33,23 +48,32 @@ section .text {
   align-items: center;
 }
 
-section .text span {
-  display: block;
-  padding: .3em 1.5rem;
+section .text div.text-content {
+  margin: 2rem;
 }
 
-section .square-placeholder {
-  padding-top: 100%;
+section .text p.text-subtitle {
+  font-weight: 700;
+}
+
+section .text p.text-subtitle:not(:first-child) {
+  margin-top: 3rem;
 }
 
 section.header {
-  background-color: #F7B73A;
+  background-image: url('./images/bg-header.png');
   overflow-x: hidden;
+}
+
+@media screen and (max-width: 500px) {
+  section.header {
+    background-image: url('./images/mob-bg-header.png');
+  }
 }
 
 section.header .title-image-placeholder {
   padding-top: 40%;
-  min-height: 20rem;
+  min-height: 15rem;
 }
 
 section.header .page-links-carousel {
@@ -89,7 +113,7 @@ section.footer .icon {
 }
 
 section.footer .icon i {
-  margin: 0 .5rem;
+  margin: 0 1.5rem;
 }
 
 section.footer .text {
@@ -106,7 +130,7 @@ section.footer .text span {
 }
 
 section.about {
-  background-color: #29241D;
+  background-image: url('./images/bg-about.png');
   color: white;
   padding: 2rem;
 }
@@ -142,6 +166,14 @@ section.wechat img {
   max-width: 320px;
 }
 
-section.wechat .image {
-  background-color: #FAC03B;
+section.agenda .img-bg {
+  background-image: url('./images/caligraphy.png');
+}
+
+section.time-and-location .img-bg {
+  background-image: url('./images/flint-center.jpg');
+}
+
+section.wechat .img-bg {
+  background-image: url('./images/lanterns.png');
 }
