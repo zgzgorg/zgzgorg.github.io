@@ -153,20 +153,20 @@ section.about .text p {
   text-align: center;
 }
 
-section.about .buttons {
+section .buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-section.about button {
+section button {
   background-color: #FBC73D;
   border: 0;
   border-radius: .2rem;
   margin: 1rem;
   padding: 1rem;
   text-transform: uppercase;
-  width: 12rem;
+  min-width: 12rem;
 }
 
 section.wechat img {
