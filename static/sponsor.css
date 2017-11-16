@@ -60,6 +60,15 @@ section.main ul li {
   font-size: large
 }
 
+@media screen and (max-width: 990px) {
+  .sponsor-name {
+    margin-top: 1rem
+  }
+  section.partners .row div {
+    margin-top: 2rem
+  }
+}
+
 section.partners img {
   object-fit: contain;
   height: 8rem;
