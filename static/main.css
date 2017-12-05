@@ -116,11 +116,15 @@ section.footer .icon {
   background-color: #29241D;
   color: #FBC73D;
   justify-content: center;
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
 section.footer .icon i {
-  margin: 0 1.5rem;
+  margin: 0 1rem;
+}
+
+section.footer .icon a {
+  color: #FBC73D;
 }
 
 section.footer .text {
