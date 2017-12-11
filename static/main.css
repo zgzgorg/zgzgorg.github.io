@@ -182,13 +182,12 @@ section .call-out {
 }
 
 section button {
-  background-color: #FBC73D;
   border: 0;
-  border-radius: .2rem;
   margin: 1rem;
-  padding: 1rem;
   text-transform: uppercase;
-  min-width: 12rem;
+  width: 300px;
+  height: 80px;
+  background: url(./images/button.png) center center no-repeat;
 }
 
 section.wechat img {
