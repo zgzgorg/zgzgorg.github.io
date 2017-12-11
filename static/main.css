@@ -161,6 +161,24 @@ section .buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: -16px auto 12px;
+}
+
+section .call-out img {
+  height: 65px;
+  width: 215.5px;
+}
+
+section .call-out {
+  display: flex;
+  justify-content: center;
+  margin-left: -180px;
+}
+
+@media screen and (max-width: 500px) {
+  section .call-out {
+    margin-left: -100px;
+  }
 }
 
 section button {
