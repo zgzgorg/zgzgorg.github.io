@@ -164,20 +164,41 @@ section .buttons {
   margin: -16px auto 12px;
 }
 
-section .call-out img {
+section .call-out {
   height: 65px;
   width: 215.5px;
+  margin: auto;
+  display: none;
 }
 
-section .call-out {
-  display: flex;
-  justify-content: center;
-  margin-left: -180px;
+section .call-out-presale {
+  height: 151px;
+  width: 413px;
+  margin: auto;
+}
+
+section .call-out img,
+section .call-out-presale img {
+  width: 100%;
+  height: 100%;
+}
+
+section .call-out img {}
+
+section .call-out-presale img {
+  margin-left: -190px;
+  margin-top: 40px;
 }
 
 @media screen and (max-width: 500px) {
-  section .call-out {
-    margin-left: -100px;
+  section .call-out img {}
+  section .call-out-presale {
+    height: 105px;
+    width: 264px;
+  }
+  section .call-out-presale img {
+    margin-left: -40px;
+    margin-top: 10px;
   }
 }
 
@@ -186,8 +207,12 @@ section button {
   margin: 1rem;
   text-transform: uppercase;
   width: 300px;
-  height: 80px;
-  background: url(./images/button.png) center center no-repeat;
+  height: 70px;
+  background-color: #FBC73D;
+  border-radius: 35px;
+  -webkit-box-shadow: 0px 0px 20px 0px #FBC73D;
+  -moz-box-shadow: 0px 0px 20px 0px #FBC73D;
+  box-shadow: 0px 0px 20px 0px #FBC73D;
 }
 
 section.wechat img {
