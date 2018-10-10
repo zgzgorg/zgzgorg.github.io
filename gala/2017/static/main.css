@@ -204,10 +204,9 @@ section.download {
   color: #000;
   opacity: .54
 }
-.about .docs-navigation .about {
-  opacity: 1;
-  border-bottom-color: #fff
-}
+.about .docs-navigation .about,
+.conact .docs-navigation .contact,
+.faq .docs-navigation .faq,
 .past .docs-navigation .past {
   opacity: 1;
   border-bottom-color: #fff;
