@@ -181,6 +181,17 @@ section .buttons {
   margin: -16px auto 12px;
 }
 
+.buttons button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons button span {
+  font-size: small;
+}
+
 section .call-out {
   height: 65px;
   width: 215.5px;
