@@ -101,6 +101,11 @@ section.header .page-links-carousel {
   -webkit-overflow-scrolling: touch;
 }
 
+.page-links-carousel::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
 section.header .page-links {
   display: flex;
   flex-direction: row;
@@ -295,4 +300,8 @@ section.faq-section p.faq-q {
 section.faq-section p.faq-a {
   color: #666;
   margin-bottom: 3rem;
+}
+
+.hidden {
+  display: none !important;
 }

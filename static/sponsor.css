@@ -23,7 +23,7 @@ section.main div.row:not(:first-of-type) {
 }
 
 section.main div.title {
-  font-size: x-large;
+  font-size: large;
   padding: 2rem;
 }
 
@@ -75,4 +75,26 @@ section.partners img {
   width: 8rem;
   border-radius: .5rem;
   margin-bottom: 2rem;
+}
+
+.review-2018 {
+  font-size: x-large;
+  text-align: center;
+}
+
+.sponsor-2019 {
+  background-color: #FBC73D;
+  border-radius: .5rem;
+  -webkit-box-shadow: 0px 0px 20px 0px #FBC73D;
+  -moz-box-shadow: 0px 0px 20px 0px #FBC73D;
+  box-shadow: 0px 0px 20px 0px #FBC73D;
+  margin: 0 1rem 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.sponsor-2019 a {
+  color: #fff;
+  font-size: large;
+  text-shadow: #fff .2em .2em 1em;
 }
