@@ -1,436 +1,504 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>载歌在谷2019年湾区春节晚会 - ZaiGeZaiGu Chinese New Year Gala</title>
-	<link rel="icon" type="image/png" sizes="32x32" href="./static/gala_2019_image/zgzg_logo.png">
-	
-	
-	  <!-- Global site tag (gtag.js) - Google Analytics -->
- 	 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89539331-1"></script>
-	  <script>
-	    window.dataLayer = window.dataLayer || [];
-	    function gtag() { dataLayer.push(arguments); }
-	    gtag('js', new Date());
-	    gtag('config', 'UA-89539331-1');
-	  </script>
-	  
-	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
-	    integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-	    crossorigin="anonymous">
-	  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-	    crossorigin="anonymous"></script>
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
-	    integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-	    crossorigin="anonymous"></script>
-	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
-	    integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-	    crossorigin="anonymous"></script>
-	  <script src="https://use.fontawesome.com/b51800690e.js"></script>
 
-	  <script>
-    var hdWidth = document.body.getBoundingClientRect().width;
-    var textWidth = document.getElementsByClassName('hd-text')[0].offsetWidth;
-    var scale = hdWidth / textWidth;
+body {
+    /*background-color: #fbd873;*/
+    font:normal 100%;
+    font-family:  Kaiti SC;
+    margin:0px;
+}
 
-    document.getElementsByClassName('hd-text')[0].style.fontSize = scale * 100 + '%';
-</script>
+/* v2 
+.intro_ele{
+  position:absolute; 
+  color:black; 
+  text-align: center;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+}
+*/
 
-	  <link rel="stylesheet" type="text/css" href="static/gala_2019.css"> 
-</head>
+/* nav start */
+header {
+  background-color: #EED9B1;
+  padding: 1em 0;
+  color:var(--color-main-flip);
+}
+header h1,
+header p {
+    margin: 0;
+}
 
-<body>
+.container {
+  max-width:800px;
+  margin-right: auto;
+  margin-left: auto;
 
-<!--header and intro
-<div>
-			<div class="intro_ele"> 
-				<div>
-					
-						<h3>2019“载歌在谷”春晚&游园会</h3>
-						<p>地点：Flint Center</p>
-						<p>时间：2019年2月2日</p>
-						<p>节目、主持人、志愿者报名：通道关闭</p>
-						<p>春晚售票：暂未开放</p>
-					
-				</div>	
-			</div> 	
-			<img src= "image/poster.jpg" style="width: 100%;"> </img> 
-    </div>
--->
-
-<!--header and intro-->
-
-<header>
-		<div class="container flex-parent">
-			<div class="flex-child"></div>
-			<div class="flex-none button-menu">
-				<label for="menu"><i class="icon">&equiv;</i></label>
-			</div>
-		</div>
-	</header>
-
-<nav class="nav">
-		<input type="checkbox" id="menu" class="hidden">
-		<ul class="container">
-			<li><a href="#news">
-				<div>春节晚会&游园会</div>
-				<div>2019 Gala & Fair</div>
-			</a></li>
-			<li><a href="#2018review">
-				<div>历年回顾</div>
-				<div>Memory</div>
-				</a></li>
-			<li><a href="#calendar">
-				<div>志愿者行事历</div>
-				<div>Calendar</div>
-		</a></li>
-			<li><a href="#sponsor">
-				<div>赞助商</div>
-				<div>Sponsor</div>
-			</a></li>
-			<li><a href="#star">
-				<div>志愿者之星</div>
-				<div>Star</div>
-			</a></li>
-			<li><a href="#milestone"> 
-				<div>大事记</div>
-				<div>Milestone</div>
-			</a></li>
-		</ul>
-	</nav>
+}
 
 
-<div class="headerposter">
-		<img src="static/gala_2019_image/poster_v3.png" alt="">
-		<div class="header_intro" >
-			<div class="class="displayinline"">
-			<h3>2019“载歌在谷”</h3>
-			<h3>春晚&游园会</h3>
-			</div>
-			<h4 class="description">2019 ZGZG Gala & Fair </h4>		
-		<div class="content2">
-			<div class="txtshow">倒计时<span id="timeShow"></span>
-		</div>
-	</div>
-	<DIV id="CountMsg" class="HotDate"> 
-		<h2>
-			<span id="t_d">00天</span> 
-			<span id="t_h">00时</span> 
-			<span id="t_m">00分</span> 
-			<span id="t_s">00秒</span> 
-		</h2>
-	</DIV> 
-		<script type="text/javascript"> 
-			function getRTime(){ 
-			var EndTime= new Date('2019/02/02 19:00:00'); //截止时间 
-			var NowTime = new Date(); 
-			var t =EndTime.getTime() - NowTime.getTime(); 
-			/*var d=Math.floor(t/1000/60/60/24); 
-			t-=d*(1000*60*60*24); 
-			var h=Math.floor(t/1000/60/60); 
-			t-=h*60*60*1000; 
-			var m=Math.floor(t/1000/60); 
-			t-=m*60*1000; 
-			var s=Math.floor(t/1000);*/ 
-			 
-			var d=Math.floor(t/1000/60/60/24); 
-			var h=Math.floor(t/1000/60/60%24); 
-			var m=Math.floor(t/1000/60%60); 
-			var s=Math.floor(t/1000%60); 
-			 
-			document.getElementById("t_d").innerHTML = d + "天"; 
-			document.getElementById("t_h").innerHTML = h + "时"; 
-			document.getElementById("t_m").innerHTML = m + "分"; 
-			document.getElementById("t_s").innerHTML = s + "秒"; 
-			} 
-			setInterval(getRTime,1000); 
-		</script>
-		
-		<p>地点：Flint Center</p>
-		<p>时间：2019年2月2日</p>
-	</div>
-
-	<!-- 
-	<div class="header_intro_inline">
-			<div>
-				<h3>节目、主持人、志愿者报名</h3>
-				<p>报名已结束</p>
-			</div>
-			<div>
-				<h3>春晚售票</h3>
-				<p>暂未开放，欢迎关注我们“载歌在谷”公众号。</p>
-			</div>
-			<div>
-				<h3>“载歌在谷”赞助商</h3>
-				<p>赞助商联系信息：zgzggala@gmail.com</p>
-			</div>
-	</div>
-	-->
-</div>
+.nav {
+  position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: #EED9B1;
+}
+.nav ul {
+  display:flex;
+}
+.nav li {
+  flex:1 1 auto;
+}
+.nav a {
+  display:block;
+  text-align:center;
+  color:var(--color-main-flip);
+  padding:var(--best-padding);
+  text-decoration:none;
+}
+.nav a:hover {
+  background-color:var(--color-main-flip);
+  color:var(--color-main-light);
+}
 
 
-<div class="header_intro">
-	<div class="displayinline" id="news">
-		<h3>2019"载歌在谷"</h3>
-		<h3>最新状态</h3>
-	</div>
-		<h4 class="description">2019 Gala & Fair News</h4>
-
-<div class="header_intro_inline_2" align="Center">
-			
-			<div>
-				<p class="underline">【春晚售票】</p>
-				<p>暂未开放，欢迎关注我们“载歌在谷”公众号。</p>
-			</div>
-			<div>
-				<p class="underline">【“载歌在谷”赞助商】</p>
-				<p>赞助商联系信息：zgzggala@gmail.com</p>
-			</div>
-			
-	</div>
+.collapsed,
+.nav ul {
+  list-style-type:none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left:0;
+}
 
 
-<div class="rep">
-	<div class="header_intro">
-
-	<div class="displayinline" id="2018review">
-			<h3>2018"载歌在谷"</h3>
-			<h3>春节晚会回顾</h3>
-		</div>
-			<h4 class="description">2018 ZGZG Review</h4>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/-ZaGJxlN4YQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		</div>
-	</div>
-
-<div class="hiddencalendar">
-<div class="rep">
-	<div class="header_intro">
-<div class="displayinline" id="2018review" >
-		<h3>志愿者活动行事历</h3>
-	</div>
-		<h4 class="description">2019 ZGZG Calendar</h4>
-		<iframe  src="https://calendar.google.com/calendar/embed?src=rh1dc9eu0o2071c9bq7r7hplmg%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-	</div>
-</div>
-</div>
-</div>
+.flex-parent {
+  display:flex;
+}
+.flex-child {
+  flex: 1 1 auto;
+}
+.flex-none {
+  flex:none;
+}
+.flex-vertical {
+  flex-direction: column;
+}
+.flex-center {
+  align-items:center;
+}
 
 
-	
-<!--milestone-->
-	<div class="milestone" id="milestone">
-		<div class="timeline-container" id="timeline-1">
-		  <div class="timeline-header">
-		    <h2 class="timeline-header__title">载歌在谷 Milestone 2019</h2>
-		    <h3 class="timeline-header__subtitle">有爱载歌，有家载谷</h3>
-		  </div>
-		  <div class="timeline">
-		    
-			<div class="timeline-item" data-text="有爱载歌，有家载谷">
-		      <div class="timeline__content"><img class="timeline__img" src="static/gala_2019_image/2019_team.png"/>
-		        <h2 class="timeline__content-title">载歌在谷</h2>
-		        <p class="timeline__content-desc">“载歌在谷”社区是一个以硅谷高科技从业者为主要贡献者的非盈利组织。社区以文艺活动为载体，旨在丰富硅谷华人的日常生活，弘扬中华文化，并最终为贡献者的自我提升提供实践的平台。/* “载歌在谷”社区与谷歌公司没有关系哦，这是一个多元化的贡献者社区。*/</p>
-		      </div>
-		    </div>
-
-		    <div class="timeline-item" data-text="有爱载歌，有家载谷">
-		      <div class="timeline__content"><img class="timeline__img" src="static/gala_2019_image/2019allhands.jpg"/>
-		        <h2 class="timeline__content-title">All Hands</h2>
-		        <p class="timeline__content-desc">2019.September</p>
-		        <p class="timeline__content-desc">2019“载歌在谷”春晚&游园会志愿者：本次活动志愿者报名人数超过200人，活跃人数过百人，参与度和热情度up~up~up~</p>
-		      </div>
-		    </div>
-		    <div class="timeline-item" data-text="有爱载歌，有家载谷">
-		      <div class="timeline__content"><img class="timeline__img" src="static/gala_2019_image/bootcamp.jpg"/>
-		        <h2 class="timeline__content-title">Bootcamp</h2>
-		        <p class="timeline__content-desc">2019.October</p>
-		        <p class="timeline__content-desc">“载歌在谷”6大执行小组Bootcamp</p>
-		      </div>
-		    </div>
-		    <div class="timeline-item" data-text="有爱载歌，有家载谷">
-		      <div class="timeline__content"><img class="timeline__img" src="static/gala_2019_image/design_01.jpg"/>
-		        <h2 class="timeline__content-title">宣传组</h2>
-		        <li class="timeline__content-desc">建立了宣传组工作手册与周报</li>
-		        <li class="timeline__content-desc">文案不停在发布...</li>
-		        <li class="timeline__content-desc">渠道小组创建了渠道梳理，创立了大使制度</li>
-		        <li class="timeline__content-desc">渠道小组开始运营了Instagram, Facebook, 微博</li>
-		        <li class="timeline__content-desc">网站小组完成了网站 PRD</li>
-		        <li class="timeline__content-desc">设计组在小组长和设计顾问 Max Ma 的带领下，每两周进行 Meetup 并且完成设计相关任务与 Style Guideline 设计。</li>
-		      </div>
-		    </div>
-		    <div class="timeline-item" data-text="有爱载歌，有家载谷">
-		      <div class="timeline__content"><img class="timeline__img" src="static/gala_2019_image/jiemu_02.JPG"/>
-		        <h2 class="timeline__content-title">节目组</h2>
-		        <li class="timeline__content-desc">节目组志愿者bootcamp感兴趣人数超过75人</li>
-		        <li class="timeline__content-desc">高效服务流程：Discord+Calendar+Groups</li>
-		        <li class="timeline__content-desc">建立了答疑值班表+项目管理表</li>
-		        <li class="timeline__content-desc">节目报名100+个，主持人38名</li>
-		        <li class="timeline__content-desc">密室逃脱了2.5个房间！</li>		        
-		      </div>
-		    </div>
-		    <div class="timeline-item" data-text="有爱载歌，有家载谷">
-		      <div class="timeline__content"><img class="timeline__img" src="static/gala_2019_image/bd_01.JPG"/>
-		        <h2 class="timeline__content-title">赞助组</h2>
-		        <li class="timeline__content-desc">创建招商手册</li>
-		        <li class="timeline__content-desc">建立2019招商权益表</li>
-		        <li class="timeline__content-desc">总结并记录往年经验Dos & Don'ts</li>
-		        <li class="timeline__content-desc">餐饮权益表与合作伙伴权益表出炉</li>
-		        <li class="timeline__content-desc">联系了40+赞助与合作伙伴，包括蚂蚁金服，字节跳动，支付宝，百度等。</li>
-		      </div>
-		    </div>
-		    <div class="timeline-item" data-text="有爱载歌，有家载谷">
-		      <div class="timeline__content"><img class="timeline__img" src="static/gala_2019_image/tech_02.JPG"/>
-		        <h2 class="timeline__content-title">技术组</h2>
-		        <li class="timeline__content-desc">举办了灯管培训</li>
-		        <li class="timeline__content-desc">举办了音响培训</li>
-		        <li class="timeline__content-desc">大屏幕设计出炉</li>
-		      </div>
-		    </div>
-		    <div class="timeline-item" data-text="有爱载歌，有家载谷">
-		      <div class="timeline__content"><img class="timeline__img" src="static/gala_2019_image/tiyan_01.jpg"/>
-		        <h2 class="timeline__content-title">体验组</h2>
-		        <li class="timeline__content-desc">活动体验团建 Design Doc zgzg.link/ux-4u-dd【Credit To：Steven】</li>
-		        <li class="timeline__content-desc">福利组周边设计以及表情包项目策划【Credit To: 星儿】</li>
-		        <li class="timeline__content-desc">2019门票方案【Credit To：温智鑫】</li>
-		        <li class="timeline__content-desc">体验组调查问卷</li>
-		        <li class="timeline__content-desc">宣传×体验，节目×技术，赞助×游园团建已全面展开！ </li>
-		      </div>
-		    </div>
-		    <div class="timeline-item" data-text="有爱载歌，有家载谷">
-		      <div class="timeline__content"><img class="timeline__img" src="static/gala_2019_image/youyuan_01.JPG"/>
-		        <h2 class="timeline__content-title">游园组</h2>
-		        <li class="timeline__content-desc">游园策划头脑风暴</li>
-		        <li class="timeline__content-desc">游园策划汇总出炉</li>
-		        <li class="timeline__content-desc">全面升级姻缘墙2.0</li>
-		       
-		      </div>
-		    </div>
-		    <div class="timeline-item" data-text="有爱载歌，有家载谷">
-		      <div class="timeline__content"><img class="timeline__img" src="static/gala_2019_image/tuanjian_01.jpg"/>
-		        <h2 class="timeline__content-title">团建活动</h2>
-		        <p class="timeline__content-desc"></p>
-		      </div>
-		    </div>
-		    <div class="timeline-item" data-text="有爱载歌，有家载谷">
-		      <div class="timeline__content"><img class="timeline__img" src="static/gala_2019_image/news_qiaobao.JPG"/>
-		        <h2 class="timeline__content-title">媒体报道</h2>
-		        <p class="timeline__content-desc">“载歌在谷”小伙伴，李璐、梁振年、高娃代表载歌在谷，做客美国中文电台《超级朋友圈》节目。</p>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-	</div>
+.media-image {
+  max-width:100%;
+  vertical-align: middle;
+}
+.media-row {
+  flex-wrap:wrap;
+}
+.media-row .flex-child {
+  width:25%;
+}
 
 
-<div class="rep">
-	<div class="header_intro">
-		<div class="displayinline" id="sponsor">
-		<h3>"载歌在谷"</h3>
-		<h3>赞助商</h3>
-	</div>
-		<h4 class="description">2019 Sponsor</h4>
-		<img src="static/2019_sponsor/sponsor20181115.png" alt="">
-	</div>
-</div>
+.button-menu {
+  font-size:2rem;
+  line-height:1rem;
+  vertical-align: top;
+  display:none;
+}
+.icon {
+  font-style:normal;
+}
+.hidden {
+  display:none;
+}
 
 
-<!--star-->
+@media (max-width:767px) {
+  .container {
+    padding-left:1em;
+    padding-right:1em;
+  }
+  header h1 {
+    font-size:1rem;
+  }
+  header p {
+    display:none;
+  }
+  .nav ul {
+    display:block;
+  }
+  .nav a {
+    text-align:left;
+  }
 
-<div class="rep">
-	<div class="header_intro">
-		<div class="displayinline" id="star">
-		<h3>"载歌在谷"</h3>
-		<h3>志愿者之星</h3>
-	</div>
-		<h4 class="description">ZGZG Stars of September</h4>
-		<img src="static/gala_2019_image/zgzg_star_sep.png" alt="">
-	</div>
-</div>
-
-
-<!--gallery-->
-<div class="gallery">
-	<div class="header_intro">
-		<div class="displayinline" id="memory">
-		<h3>"载歌在谷"印迹</h3>
-	</div>
-		<h4 class="description">ZGZG Memory</h4>
-	</div>
-	<div class="display">	
-		<div class="gallery_display">
-			<a href="https://photos.google.com/share/AF1QipPnuhhjzEGDJRWXWC30chQxuKwzWsfNKjFuZRYaS9wOwbl1MuzTkuU4bm5c3OykBA?key=alY3Y0ZOYW9HMVNXRllrc0ttNW12dF9vN3IzR1Bn" target="_blank"><img src="static/gala_2019_image/2018_gala.png" alt="2018“载歌在谷”春晚回顾"></a>
-			<p>2018“载歌在谷”春晚回顾</p>
-			<p>Credit by Xingfeng He</p>
-		</div>
-		<div class="gallery_display">
-			<a href="https://photos.google.com/share/AF1QipMuKipDzHVKprkAfFMnUOXGSzQ9sWa-MO3TGZXZfhe05EgycRzm438SEIL3scnFYA?key=LXRFT3dFUVRZd2tQZ3NXVzJORktPZnAtc25VOVd3" target="_blank"><img src="static/gala_2019_image/2018_fair.png" alt="2018“载歌在谷”游园回顾"></a>
-			<p>2018“载歌在谷”游园回顾</p>
-			<p>Credit by Guichun Li</p>
-		</div>
-		<div class="gallery_display">
-			<a href="https://photos.google.com/share/AF1QipNYSJkJpf2kTNwbsycEbelzU-0IT-UA7mQCv7D2clVxwq7k7kPnlopsQdyVbw-Q5Q?key=U1RhZEtsUnFSaUxub1ZGQlluZTBoSXpaeG1vdUNB" target="_blank"><img src="static/gala_2019_image/2018_volunteer.png" alt="2018“载歌在谷”志愿者记忆"></a>
-			<p>2018“载歌在谷”志愿者记忆</p>
-			<p>Credit by Simon Zou</p>
-		</div>
-		<div class="gallery_display">
-			<a href="https://photos.google.com/share/AF1QipMLOxD0BA3aOZ5QRiDss9i046QZnV2FIzIYJ2XsR-pGt7zYMSPI795cpi249N-40g?key=cXV4R2dlRU01WjJKanZoS0VRT3hWU29XcjIxdnFR" target="_blank"><img src="static/gala_2019_image/2019_volunteer.png" alt="2019“载歌在谷”正在进行时" ></a>
-			<p>2019“载歌在谷”正在进行时</p>
-			<p>Credit by everyone</p>
-		</div>
-	</div>
-</div>
-
-<!--footer-->
-
-<div class="bottom">
-   
-	<section class="footer_box">
-		<h2>About me</h2>
-		<p class="list_no_point">“载歌在谷”社区是一个以硅谷高科技从业者为主要贡献者的非盈利组织。社区以文艺活动为载体，旨在丰富硅谷华人的日常生活，弘扬中华文化，并最终为贡献者的自我提升提供实践的平台。/* “载歌在谷”社区与谷歌公司没有关系哦，这是一个多元化的贡献者社区。*/</p>
-	</section>
-	    
+  .media-row .flex-child {
+    width:50%;
+  }
 
 
-	<section class="list_no_point">
-		<h2>Follow us</h2>
-			<div class="footer_icon">
-				<!-- Facebook -->
-			    <a href="https://www.facebook.com/Zgzggala-1171075202929234/" target="_blank">
-			      <img src="static/gala_2019_image/icon/facebook_icon.png" alt="">
-			    </a>
-			    <!-- Youtube -->
-			    <a href="https://www.youtube.com/channel/UCY7-f7HBl8kvmoGtQX4TGUg/" target="_blank">
-			      <img src="static/gala_2019_image/icon/youtube_logo.png" alt="">
-			    </a>
-			  	<!-- Google Photo -->
-			  	<a href="https://zgzg.link/2019-photos" target="_blank">
-			      <img src="static/gala_2019_image/icon/google_photo_logo.png" alt="">
-			    </a>
-				<!-- instagram -->
-				<a href="https://instagram.com/zgzggala/ " target="_blank">
-			      <img src="static/gala_2019_image/icon/instagram_logo.png" alt="">
-			    </a>
-			    <!-- weibo -->
-			    <a href="https://goo.gl/pu1VwB " target="_blank">
-			      <img src="static/gala_2019_image/icon/weibo_logo.png" alt="">
-		    	</a>
-	    	</div>	
-	</section>
-	    
-	<section>
-		<img class="logo" src="static/gala_2019_image/zgzg_qr.png">
-	</section>
-</div>
+  .button-menu {
+    display:block;
+  }
+  nav.nav {
+    position:absolute;
+    width:100%;
+  }
+  #menu+ul {
+    /*display:none;*/
+    height:auto;
+    transition:all 0.3s;
+    max-height:0;
+    overflow:hidden;
+  }
+  #menu:checked+ul {
+    /*display:block;*/
+    max-height:9em;
+  }
+}
+/* nav end */
+
+.description{
+  padding-bottom: 1.2em;
+}
+
+
+.header_intro p{
+  font-size: 1em;
+}
+
+.headerposter{
+  background-color: #EED9B1;
+  color: white;
+}
+
+.rep{
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.rep img{
+  width: 100%;
+  align-items: center;
+  margin:0;
+
+}
+
+.headerposter img{
+  width: 100%;  
+  align-items: center;
+  margin:0;
+
+}
+
+.header_intro{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 0;
+}
+
+
+/*
+.header_intro_inline{
+  display: inline-block;
+  display: flex;
+  color: gray;
+  justify-content: center;
+  text-align: center;
+}
+
+.header_intro_inline div{
+  width: 30%;
+}
+*/
+
+.header_intro_inline_2 p{
+  font-size: 1em;
+}
+
+.displayinline{
+  display: inline;
+}
+
+.displayinline h3 {
+    display: inherit;
+}
+@media only screen and (max-width: 415px) {
+    .displayinline{
+  display: block;
+  font-size: 0.75em;
+}
+
+}
+
+.hiddencalendar{
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 415px) {
+
+  iframe{
+    width: 320px;
+    height: 100;
+  }
+
+  .hiddencalendar{
+    display: none;
+  }
+}
 
 
 
+/* Timeline from here */
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-<script src="static/gala_2019_js/index.js"></script>
+@import url("https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One");
+.timeline {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 700px;
+  position: relative;
+}
+.timeline__content-title {
+  font-weight: normal;
+  font-size: 40px;
+  margin: -10px 0 0 0;
+  transition: .4s;
+  padding: 0 10px;
+  box-sizing: border-box;
+  color: #fff;
+}
+.timeline__content-desc {
+  margin: 0;
+  font-size: 20px;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: normal;
+  line-height: 25px;
+}
+.timeline:before {
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  margin-left: -1px;
+  content: "";
+  background: rgba(255, 255, 255, 0.07);
+}
+@media only screen and (max-width: 767px) {
+  .timeline:before {
+    left: 40px;
+  }
+}
+.timeline-item {
+  padding: 40px 0;
+  opacity: .3;
+  filter: blur(2px);
+  transition: .5s;
+  box-sizing: border-box;
+  width: calc(50% - 40px);
+  display: flex;
+  position: relative;
+  transform: translateY(-80px);
+}
+.timeline-item:before {
+  content: attr(data-text);
+  letter-spacing: 3px;
+  width: 100%;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+  font-family: "Pathway Gothic One", sans-serif;
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+  top: 70%;
+  margin-top: -5px;
+  padding-left: 15px;
+  opacity: 0;
+  right: calc(-100% - 56px );
+}
+.timeline-item:nth-child(even) {
+  align-self: flex-end;
+}
+.timeline-item:nth-child(even):before {
+  right: auto;
+  text-align: right;
+  left: calc(-100% - 56px );
+  padding-left: 0;
+  border-left: none;
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
+  padding-right: 15px;
+}
+.timeline-item--active {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0px);
+}
+.timeline-item--active:before {
+  top: 50%;
+  transition: .3s all .2s;
+  opacity: 1;
+}
+.timeline-item--active .timeline__content-title {
+  margin: -50px 0 20px 0;
+}
+@media only screen and (max-width: 767px) {
+  .timeline-item {
+    align-self: baseline !important;
+    width: 100%;
+    padding: 0 30px 150px 80px;
+  }
+  .timeline-item:before {
+    left: 10px !important;
+    padding: 0 !important;
+    top: 50px;
+    text-align: center !important;
+    width: 60px;
+    border: none !important;
+  }
+  .timeline-item:last-child {
+    padding-bottom: 40px;
+  }
+}
+.timeline__img {
+  max-width: 100%;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+}
+.timeline-container {
+  width: 100%;
+  position: relative;
+  padding: 80px 0;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.timeline-container:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(99, 99, 99, 0.8);
+  content: "";
+}
+.timeline-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+.timeline-header__title {
+  color: #fff;
+  font-size: 30px;
+  font-weight: normal;
+  margin: 0;
+}
+.timeline-header__subtitle {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  letter-spacing: 5px;
+  margin: 10px 0 0 0;
+  font-weight: normal;
+}
+
+.demo-footer {
+  padding: 60px 0;
+  text-align: center;
+}
+.demo-footer a {
+  color: #999;
+  display: inline-block;
+  font-family: Cardo;
+}
+
+/* Gallery */
+
+
+.display{
+  display: inline-block;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.gallery_display p{
+  text-align: center;
+}
+
+.gallery_display img{
+  width: 200px;
+  padding-bottom: 15px;
+}
 
 
 
-</body>
-</html>
+@media only screen and (max-width: 767px) {
+  .display {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: auto;
+    padding: 10px;
+  }
+  .gallery_display {
+    
+    font-size: 0.75em;
+    text-align: center;
+  }
+}
+
+
+/* Footer */
+
+
+.footer_icon{
+  display: inline-flex;
+}
+
+.footer_icon img{
+  width: 30px;
+  padding: 2px;
+}
+
+.zgzg_qr{
+  width: 150px;
+}
+
+
+.bottom{
+    display: inline-block;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;  
+    padding: 20px;
+    background-color: black;
+    color:white; 
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 50px;
+}
+
+
+.bottom section{
+    margin: 20px;
+    font-size: 12px;
+}
+
+.logo{
+    width: 130px;
+}
+
+@media only screen and (max-width: 767px) {
+  .bottom {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: auto;
+    padding: 10px;
+  }
+  .gallery_display {
+
+    font-size: 0.75em;
+    text-align: center;
+  }
+}
