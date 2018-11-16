@@ -185,7 +185,7 @@ header p {
 }
 
 .headerposter img{
-	width: 100%;	
+  width: 100%;  
   align-items: center;
   margin:0;
 
@@ -227,10 +227,9 @@ header p {
 @media only screen and (max-width: 415px) {
     .displayinline{
   display: block;
-
+  font-size: 0.75em;
 }
-.header_intro{
-font-size: 0.75em;
+
 }
 
 .hiddencalendar{
@@ -346,14 +345,6 @@ font-size: 0.75em;
 .timeline-item--active .timeline__content-title {
   margin: -50px 0 20px 0;
 }
-
-@media only screen and (max-width: 767px) {
-
-.timeline__content-desc{
-  font-size: 0。75em;
-}
-}
-
 @media only screen and (max-width: 767px) {
   .timeline-item {
     align-self: baseline !important;
@@ -438,7 +429,7 @@ font-size: 0.75em;
 
 .gallery_display img{
   width: 200px;
-   padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 
@@ -451,7 +442,7 @@ font-size: 0.75em;
     padding: 10px;
   }
   .gallery_display {
-
+    
     font-size: 0.75em;
     text-align: center;
   }
@@ -511,3 +502,5 @@ font-size: 0.75em;
     text-align: center;
   }
 }
+
+
