@@ -2,7 +2,7 @@
 body {
     /*background-color: #fbd873;*/
     font:normal 100%;
-    font-family:  Kaiti SC;
+    font-family:  KaiTi_GB2312;
     margin:0px;
 }
 
@@ -28,6 +28,26 @@ header p {
     margin: 0;
 }
 
+.ticketbutton {
+    background-color: #DDDDDD;
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 100px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    white-space:nowrap; 
+}
+
+.ticketbutton p{
+white-space:nowrap; 
+}
+
 .container {
   max-width:800px;
   margin-right: auto;
@@ -35,12 +55,13 @@ header p {
 
 }
 
-
 .nav {
-  position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
     background-color: #EED9B1;
+    color: white;
+    padding:10px;
 }
 .nav ul {
   display:flex;
@@ -187,7 +208,7 @@ header p {
 .headerposter img{
   width: 100%;  
   align-items: center;
-  margin:0;
+  margin-bottom: 50px;
 
 }
 
@@ -196,6 +217,7 @@ header p {
   padding-top: 20px;
   padding-bottom: 20px;
   margin-top: 0;
+  margin-bottom: 50px;
 }
 
 
@@ -218,6 +240,7 @@ header p {
 }
 
 .displayinline{
+  margin-top: 20px;
   display: inline;
 }
 
@@ -234,7 +257,6 @@ header p {
 
 .hiddencalendar{
   background-color: white;
-  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -488,6 +510,7 @@ header p {
 .logo{
     width: 130px;
 }
+
 
 @media only screen and (max-width: 767px) {
   .bottom {
