@@ -231,8 +231,8 @@ header p {
   width: 100%;
   align-items: center;
   margin:0;
-
 }
+
 
 .headerposter img{
   width: 100%;  
@@ -509,6 +509,17 @@ header p {
   }
 }
 
+.rep2{
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.rep2 img{
+  width: 25%;
+  align-items: center;
+  margin-top: 10px;
+}
 
 .sponsor_words{
   text-align: left;
@@ -520,7 +531,17 @@ header p {
 @media only screen and (max-width: 415px) {
     .sponsor_words{
     padding-left: 10%;
-    padding-right: 10%;}
+    padding-right: 10%;
+    font-size: 0.75em;
+    }
+
+    .header_intro p {
+      font-size: 0.75em;
+    }
+
+    .rep2 img{
+    width: 50%;
+    }
 }
 
 /* Footer */
