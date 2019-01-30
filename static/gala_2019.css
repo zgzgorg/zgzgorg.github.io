@@ -527,6 +527,11 @@ header p {
   padding-top: 15px;"
 }
 
+/*.sponsorinline{
+  display: inline;
+  display: flex;
+}*/
+
 @media only screen and (max-width: 415px) {
     .sponsor_words{
     padding-left: 10%;
