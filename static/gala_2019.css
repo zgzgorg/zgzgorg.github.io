@@ -197,7 +197,11 @@ header p {
 }
 
 .hppic-1 {
-    background-image: url(gala_2019_image/luomu.jpeg);
+    background:  linear-gradient(
+          rgba(0, 0, 0, 0.2), 
+          rgba(0, 0, 0, 0.2)
+        ),
+    url("images/hammer_empty.jpg")
 }
 
 .wordswhite{
@@ -485,6 +489,7 @@ header p {
 
 .gallery_display p{
   text-align: center;
+  color: white;
 }
 
 .gallery_display img{

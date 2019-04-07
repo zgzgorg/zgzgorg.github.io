@@ -1,0 +1,100 @@
+section.header .title-image-placeholder {
+  padding: 0;
+  min-height: 0;
+  height: 0;
+}
+
+section.header {
+  background-position-y: 0
+}
+
+section.main {
+  padding: 2rem
+}
+
+@media screen and (max-width: 990px) {
+  section.main {
+    padding: 2rem 0
+  }
+}
+
+section.main div.row:not(:first-of-type) {
+  padding-top: 1rem
+}
+
+section.main div.title {
+  font-size: large;
+  padding: 2rem;
+}
+
+section.main div.title::after {
+  content: '';
+  display: block;
+  height: 12px;
+  width: 90px;
+  margin-top: .5rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('./images/brush-stroke.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+section img {
+  object-fit: contain;
+  height: 12rem;
+  width: 12rem;
+}
+
+section.main ul {
+  list-style-type: none;
+  padding-right: 40px;
+}
+
+section.main ul li {
+  margin: 1rem 0
+}
+
+.sponsor-name {
+  font-size: large
+}
+
+@media screen and (max-width: 990px) {
+  .sponsor-name {
+    margin-top: 1rem
+  }
+  section.partners .row div {
+    margin-top: 2rem
+  }
+}
+
+section.partners img {
+  object-fit: contain;
+  height: 8rem;
+  width: 8rem;
+  border-radius: .5rem;
+  margin-bottom: 2rem;
+}
+
+.review-2018 {
+  font-size: x-large;
+  text-align: center;
+}
+
+.sponsor-2019 {
+  background-color: #FBC73D;
+  border-radius: .5rem;
+  -webkit-box-shadow: 0px 0px 20px 0px #FBC73D;
+  -moz-box-shadow: 0px 0px 20px 0px #FBC73D;
+  box-shadow: 0px 0px 20px 0px #FBC73D;
+  margin: 0 1rem 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.sponsor-2019 a {
+  color: #fff;
+  font-size: large;
+  text-shadow: #fff .2em .2em 1em;
+}
